@@ -8,41 +8,41 @@ Bike Share Data Analysis
 
 **Files**
 
-**1. **bike_share_queries**.sql**
+**1.bike_share_queries**.**sql**
 
-** Description:** A collection of SQL queries for performing data cleaning, transformation, and analysis on bike share data.
+**Description:** A collection of SQL queries for performing data cleaning, transformation, and analysis on bike share data.
 
 **Key Features:**
  
-  Combining monthly data into a single fiscal year table (2023_FY_tripdata).
+  -Combining monthly data into a single fiscal year table (2023_FY_tripdata).
   
-  Cleaning the data by removing duplicates, handling missing values, and excluding invalid ride lengths.
+  -Cleaning the data by removing duplicates, handling missing values, and excluding invalid ride lengths.
   
-  Adding day names and categorizing data for analysis.
+  -Adding day names and categorizing data for analysis.
   
-  Analysis queries include:
+  -Analysis queries include:
   
-  Daily ride patterns.
+  -Daily ride patterns.
   
-  Peak usage times.
+  -Peak usage times.
   
-  Popular routes and stations.
+  -Popular routes and stations.
   
-  Seasonal usage trends.
+  -Seasonal usage trends.
   
-  Short vs. long ride analysis.
+  -Short vs. long ride analysis.
   
-  Weekend vs. weekday usage.
+  -Weekend vs. weekday usage.
   
-  Round trip analysis.
+  -Round trip analysis.
   
-  User behavior during peak/off-peak hours.
+  -User behavior during peak/off-peak hours.
 
 **How to Use:**
 
- Load the SQL file into your database tool (e.g., BigQuery, MySQL Workbench).
+ * Load the SQL file into your database tool (e.g., BigQuery, MySQL Workbench).
  
- Execute the queries step-by-step based on your analysis needs.
+ * Execute the queries step-by-step based on your analysis needs.
 
 **2. bike_share_analysis.Rmd**
 
@@ -50,60 +50,60 @@ Bike Share Data Analysis
 
 **Key Features:**
 
- Loading and preprocessing the data.
+ * Loading and preprocessing the data.
  
- Visualization of ride patterns by user type, day, hour, and bike type.
+ * Visualization of ride patterns by user type, day, hour, and bike type.
  
- Detailed hourly, monthly, and bike type usage analysis.
+ * Detailed hourly, monthly, and bike type usage analysis.
  
- Exporting summary statistics to CSV.
+ * Exporting summary statistics to CSV.
 
 **How to Use:**
 
- Open the .Rmd file in RStudio.
+ * Open the .Rmd file in RStudio.
  
- Install required packages (tidyverse, lubridate, ggplot2).
+ * Install required packages (tidyverse, lubridate, ggplot2).
  
- Knit the file to generate an HTML report or run chunks interactively.
+ * Knit the file to generate an HTML report or run chunks interactively.
 
 **Prerequisites**
 
 **SQL File:**
 
-  Access to a database system that supports the SQL queries (e.g., BigQuery, MySQL).
+  * Access to a database system that supports the SQL queries (e.g., BigQuery, MySQL).
   
-  Download the data from https://divvy-tripdata.s3.amazonaws.com/index.html for the 12 months of 2023 (The data has been made available by Motivate International Inc. under this license.)
+  * Download the data from https://divvy-tripdata.s3.amazonaws.com/index.html for the 12 months of 2023 (The data has been made available by Motivate International Inc. under this license.)
 
 **RMarkdown File:**
 
-  RStudio with R version 4.0 or later.
+  * RStudio with R version 4.0 or later.
   
-  Required libraries: tidyverse, lubridate, ggplot2.
+  * Required libraries: tidyverse, lubridate, ggplot2.
 
 **How to Run the Analysis**
 
 **SQL Analysis:**
   
-  Import the monthly bike share data into your database.
+  * Import the monthly bike share data into your database.
   
-  Execute the bike_share_queries.sql script to clean and analyze the data.
+  * Execute the bike_share_queries.sql script to clean and analyze the data.
 
 **RMarkdown Analysis:**
 
-  Place the cleaned data file (2023_FY_tripdata.csv) in the correct directory.
+  * Place the cleaned data file (2023_FY_tripdata.csv) in the correct directory.
   
-  Run the RMarkdown file for detailed visualizations and additional insights.
+  * Run the RMarkdown file for detailed visualizations and additional insights.
 
 **Outputs**
 
 SQL Outputs:
 
- Summary statistics and intermediate tables stored in the database.
+ * Summary statistics and intermediate tables stored in the database.
  
- Results can be exported as CSV files for further analysis.
+ * Results can be exported as CSV files for further analysis.
 
 RMarkdown Outputs:
 
- Interactive HTML report with visualizations.
+ * Interactive HTML report with visualizations.
  
- CSV file containing summary statistics.
+ * CSV file containing summary statistics.
